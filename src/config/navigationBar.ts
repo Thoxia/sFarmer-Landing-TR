@@ -33,25 +33,14 @@ export interface NavData {
 
 export const navigationBarData: NavData = {
 	logo: {
-		src: '/logo.svg',
+		src: '/thoxia.webp',
 		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		text: 'THOXIA'
 	},
 	navItems: [
-		{ name: 'Home', link: '/' },
-		{ name: 'Pricing', link: '/pricing' },
-		{ name: 'Features', link: '/features' },
-		{
-			name: 'Resources',
-			link: '#',
-			submenu: [
-				{ name: 'Blog', link: '/blog' },
-				{ name: 'Changelog', link: '/changelog' },
-				{ name: 'FAQ', link: '/faq' },
-				{ name: 'Terms', link: '/terms' }
-			]
-		},
-		{ name: 'Contact', link: '/contact' }
+		{ name: 'Ana Sayfa', link: '/' },
+		{ name: 'Tüm Özellikler', link: '/features' },
+		{ name: 'Discord', link: 'https://discord.gg/thoxia' }
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Şimdi Satın Al!', link: 'https://thoxia.com', style: 'primary', size: 'lg' }]
 }

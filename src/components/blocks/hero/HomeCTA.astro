@@ -13,44 +13,61 @@ import ChipNotification from '../../ui/ChipNotification.astro'
 import { Image } from 'astro:assets'
 import Button from '../../ui/Button.astro'
 import AvatarGroup from '../../ui/AvatarGroup.astro'
+import { YouTube } from '@astro-community/astro-embed-youtube';
 
 // Content
 // - Hero Image
 import heroImage from '../../../assets/hero-01.png'
 // - Avatars
-import user1 from '../../../assets/avatars/avatar-01.webp'
-import user2 from '../../../assets/avatars/avatar-02.webp'
-import user3 from '../../../assets/avatars/avatar-03.webp'
+import user1 from '../../../assets/avatars/7f36ae5829efd411f753efc174e62c03.png'
+import user2 from '../../../assets/avatars/7837e3a8c3a4a85e9a9ecfe258a5104d.png'
+import user3 from '../../../assets/avatars/a10de1e76b11cd8f8075dbfe18ad5af7.png'
+import Spacer from '../../ui/Spacer.astro'
 const avatars = [
-	{ image: { src: user1.src, alt: 'user name' }, link: '/' },
-	{ image: { src: user2.src, alt: 'user name' }, link: '/' },
-	{ image: { src: user3.src, alt: 'user name' }, link: '/' }
+	{ image: { src: user1.src, alt: 'CraftLime' }, link: '/' },
+	{ image: { src: user2.src, alt: 'RebornCraft' }, link: '/' },
+	{ image: { src: user3.src, alt: 'CraftLuna' }, link: '/' }
 ]
 ---
 
-<Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900">
+<Section id="intro" padding="none" classes="bg-neutral-50 dark:bg-neutral-900">
 	<Row>
 		<Col span="2" />
-		<Col span="8" align="center">
+
+		<Col span="8" align="center" classes='mt-10'>
 			<ChipNotification radius="rounded-full" classes="mb-6">
-				<strong>30K+</strong> satisfied customers
+				+150 muhteşem müşteri
 				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
 			</ChipNotification>
-			<h1>Enhance team <strong>performance</strong> with seamless integration</h1>
 
-			<p class="pb-0 text-lg">Work smarter, not harder, with our innovative platform</p>
-			<Button size="lg" link="/">Get started for free</Button>
+			<script src="../../scripts/textRotator.ts"></script>
+            <script>
+                document.addEventListener('astro:page-load', () => {
+                import('../../scripts/textRotator').then(module => {
+                  module.initTextRotator();
+                });
+              });
+            </script>
+
+			<h1 class="text-5xl font-medium leading-none md:text-5xl">Artık 
+				<strong> <text class="text-item bg-lime" data-texts="Eski,Hatalı,Dupe'lu"></text> </strong>
+				<br>eklentilerden bıktınız mı?
+			</h1>
+
+			<h4><strong>sFarmer</strong> ile klasikleşmiş çiftçi deneyiminizi <strong>üst seviyeye</strong> taşıyın.</h4>
+			
 		</Col>
 		<Col span="2" />
 		<Col span="2" />
 		<Col span="8">
-			<Image
-				src={heroImage}
-				alt="Foxi. The tailwind astro theme"
-				class="translate-y-8 shadow-2xl shadow-neutral-200 dark:shadow-neutral-950"
-				format="webp"
-			/></Col
-		>
-		<Col span="2" />
+			<div class="ml-12 no-margin-mobile">
+				<YouTube
+  				id="yOmKw_QVdw8"
+  				poster="https://i.imgur.com/TrsgolA.png"
+			/>
+			</div>
+		</Col>
+		
+		<Col span="6" />
 	</Row>
 </Section>

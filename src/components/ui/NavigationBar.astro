@@ -41,7 +41,7 @@ const savedNavActions = navActions.map((action) => ({
 			<!-- Logo -->
 			<a href="/" class="header__logo">
 				<img src={logo.src} alt={logo.alt} width="48" height="48" />
-				<span>{logo.text}</span>
+				<span class="ml-3 ">{logo.text}</span>
 			</a>
 
 			<!-- Menu toggle -->
@@ -99,9 +99,6 @@ const savedNavActions = navActions.map((action) => ({
 					))
 				}
 			</ul>
-
-			<!-- Theme Switcher -->
-			<Switcher />
 
 			<!-- Navigation action buttons -->
 			<div class="header__actions">

@@ -26,11 +26,11 @@ export const configData: Config = {
 		'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
 	ogImage: '/og.jpg',
 	logo: {
-		src: '/logo.svg',
+		src: 'thoxia.webp',
 		alt: 'Foxi. logo'
 	},
 	canonical: true,
 	noindex: false,
-	mode: 'auto',
+	mode: 'dark',
 	scrollAnimations: true
 }
