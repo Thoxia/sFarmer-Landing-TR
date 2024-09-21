@@ -21,13 +21,13 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Foxi. Tailwind CSS Astro Starter Kit by Oxygenna',
+	siteTitle: 'sFarmer. THOXIA tarafından tasarlandı ve geliştirildi.',
 	siteDescription:
-		'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
-	ogImage: '/og.jpg',
+		'sFarmer, THOXIA tarafından tasarlanmış, gelişmiş bir çiftçi eklentisidir.',
+	ogImage: '/sFarmer.png',
 	logo: {
 		src: 'thoxia.webp',
-		alt: 'Foxi. logo'
+		alt: 'THOXIA logo'
 	},
 	canonical: true,
 	noindex: false,

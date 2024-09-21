@@ -35,73 +35,31 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'THOXIA',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'sFarmer, klasikleşmiş çiftçi deneyimini olabilecek en iyi seviyeye taşır. Oyuncularınızın yardımcı ve destekçisi olur.',
 		logo: {
 			src: '/thoxia.webp',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			alt: 'sFarmer Tanıtım',
+			text: 'THOXIA'
 		}
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'Hakkımızda',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategory: 'Discord',
+					subCategoryLink: 'https://discord.gg/thoxia'
 				},
 				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategory: 'Satın alım',
+					subCategoryLink: 'https://thoxia.com'
 				},
 				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
+					subCategory: 'Döküman',
+					subCategoryLink: 'https://docs.thoxia.com'
 				},
-				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
-				}
-			]
-		},
-		{
-			category: 'About us',
-			subCategories: [
-				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
-				},
-				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
-				}
-			]
-		},
-		{
-			category: 'Get in touch',
-			subCategories: [
-				{
-					subCategory: 'Contact',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
-				}
 			]
 		}
 	],
