@@ -8,7 +8,7 @@
 import TextImage from '../basic/TextImage.astro'
 
 // Content
-import highlight01 from '../../../assets/highlights/highlight-01.svg'
+import highlight01 from '../../../assets/highlights/config.png'
 import highlight01mobile from '../../../assets/highlights/highlight-01-mobile.svg'
 import highlight02 from '../../../assets/highlights/highlight-02.svg'
 import highlight02mobile from '../../../assets/highlights/highlight-02-mobile.svg'
@@ -28,40 +28,29 @@ type HighlightBlock = {
 }
 const highlightBlocks: HighlightBlock[] = [
 	{
-		title: 'Complete Project <strong>Visibility</strong>',
-		text: 'Gain complete visibility into your projects and tasks with our comprehensive dashboard. Easily track progress, deadlines, and team performance at a glance. Our dashboard offers real-time project tracking',
+		title: '<strong>sFarmer</strong> ile kontrol <strong>sizin elinizde</strong>.',
+		text: 'sFarmer, yalnızca oyuncularınızı önemsemekle kalmayıp, sunucu sahiplerini de önemsiyor. Gelişmiş ama basit konfigürasyon dosyaları ile eklenti düzenlemelerinde hiç zorlanmayacaksınız.',
 		image: highlight01,
 		imageWidth: highlight01.width,
 		imageHeight: highlight01.height,
-		mobileImage: highlight01mobile,
 		imagePosition: 'right'
 	},
 	{
-		title: 'Advanced <strong>Automation</strong> Tools',
-		text: 'Automate repetitive tasks and streamline your workflow with our advanced automation tools. Save time and reduce errors by leveraging automated task assignments, workflow templates, and seamless integration with popular apps and services.',
+		title: 'İhtiyaç duyacağınızdan <strong>daha fazla</strong> eklenti desteği!',
+		text: `sFarmer, yapısı gereği diğer eklentilerle entegre çalışır. 6'dan fazla bölge yönetim eklentisi, 2'den fazla ekonomi eklentisi desteği ve 3'den fazla etkileşim eklentisi ile zaten sunucunuzda olan eklentilerden fazlasına ihtiyaç duymayacaksınız. Desteklenen tüm eklentilerin listesini dökümanlarımızda bulabilirsiniz.`,
 		image: highlight02,
-		mobileImage: highlight02mobile,
 		imageWidth: highlight02.width,
 		imageHeight: highlight02.height,
 		imagePosition: 'left'
 	},
 	{
-		title: '<strong>Effective</strong> Team Collaboration',
-		text: 'Enhance team communication and collaboration with our seamless tools. Keep everyone on the same page and ensure efficient project execution through real-time messaging, shared document editing, and task comments. ',
+		title: '<strong>Bilgili</strong> destek ekibi',
+		text: 'THOXIA olarak, en ufak bir şeye ihtiyacınız olduğunda destek ekibimiz yanınızda. Bu eklentiyle ilgili bir soru veya sorun olabilir, veya belki de sadece sohbet etmek istiyorsunuzdur. Kapımız herkese açık! 🙃',
 		image: highlight03,
 		mobileImage: highlight03mobile,
 		imageWidth: highlight03.width,
 		imageHeight: highlight03.height,
 		imagePosition: 'right'
-	},
-	{
-		title: 'Robust Data <strong>Security</strong>',
-		text: 'Protect your data with our robust security features. We prioritize your privacy and security to ensure that your information is always safe. With end-to-end encryption, role-based access control, and regular security audits.',
-		image: highlight04,
-		mobileImage: highlight04mobile,
-		imageWidth: highlight04.width,
-		imageHeight: highlight04.height,
-		imagePosition: 'left'
 	}
 ]
 ---

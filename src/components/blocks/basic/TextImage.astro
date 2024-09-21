@@ -53,7 +53,7 @@ const {
 			<picture
 				class=`text-image__picture ${offsetImage  ? 'text-image__picture--offset' : ''} ${imagePosition === 'right' ? 'text-image__picture--offset-right' : ''}`
 			>
-				{mobileImage && <source srcset={mobileImage.src} media="(max-width: 1024px)" />}
+				{mobileImage && <source media="(max-width: 1024px)" />}
 				<img src={image.src} alt={title} width={imageWidth} height={imageHeight} />
 			</picture>
 		</Col>

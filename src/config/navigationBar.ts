@@ -39,7 +39,7 @@ export const navigationBarData: NavData = {
 	},
 	navItems: [
 		{ name: 'Ana Sayfa', link: '/' },
-		{ name: 'Tüm Özellikler', link: '/features' },
+		{ name: 'Döküman', link: 'https://docs.thoxia.com' },
 		{ name: 'Discord', link: 'https://discord.gg/thoxia' }
 	],
 	navActions: [{ name: 'Şimdi Satın Al!', link: 'https://thoxia.com', style: 'primary', size: 'lg' }]

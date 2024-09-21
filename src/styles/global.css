@@ -89,3 +89,31 @@ main a {
         margin-right: 0 !important;        
     }
 }
+
+.popup {
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+  }
+  
+  .popup-content {
+	max-width: 400px;
+	width: 100%;
+	padding: 20px;
+	border-radius: 8px;
+  }
+  
+  .promo-code {
+	background-color: #f1f1f1;
+	padding: 8px 12px;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .progress-bar {
+	background-color: #e0e0e0;
+  }
+  
+  .progress-bar div {
+	background-color: #007bff;
+	height: 100%;
+  }
